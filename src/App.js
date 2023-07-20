@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Body from "./component/Body";
+
 
 function App() {
   return (
     <div>
-        This is our website
+        <Body />
     </div>
   );
 }
