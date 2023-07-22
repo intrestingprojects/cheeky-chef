@@ -4,13 +4,13 @@ import Constants from "../Constant/Constants.json"
 
 function SignUp() {
 
-    const validateNumber = e => {
+    const validateNumber = (e) => {
         let currElement = e.key;
+        let num = e.target.value;
         console.log(currElement);
-        console.log(/[0-9]/.test(currElement));
-        if(currElement == "Backspace") 
+        if(currElement === "Backspace" || currElement === "ArrowLeft" || currElement === "ArrowRight") 
             return;
-        else if(!(/[0-9]/.test(currElement))) {
+        else if(num.length >= 10 || !(/[0-9]/.test(currElement))) {
             e.preventDefault();
         }
     }
@@ -47,6 +47,10 @@ function SignUp() {
                     <button className='OtpButton'>
                         {Constants.SENT_ONE_TIME_PASSWORD}
                     </button>
+                    <div className='divider'>
+                        <hr className='line'></hr>
+                        <span className='horizontalDivider'>or</span>
+                    </div>
                 </section>
             </div>
         </div>

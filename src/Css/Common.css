@@ -41,9 +41,10 @@
     display: flex;
     width: 100%;
     min-height: 2.8rem;
-    padding: 0.6rem;
+    padding: 0.4rem;
     border: 1px solid var(--whiteBorder);
     border-radius: 6px;
+    margin-bottom: 2rem;
 }
 
 .countrySelect {
@@ -76,4 +77,41 @@
     outline: none;
     border: none;
     font-size: 1.4rem;
+}
+
+.OtpButton {
+    width: 100%;
+    min-height: 44px;
+    border-radius: 0.6rem;
+    background-color: rgb(234, 57, 44);
+    border: none;
+    padding: none;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 600;
+    font-size: inherit;
+    margin-bottom: 1rem;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 2.4rem;
+}
+
+/* position relative means position wrt to its original position
+position absolute means position wrt to nearest ancesstor */
+
+.horizontalDivider {
+    position: relative;
+    transform: translateY(-65%);
+    background: var(--white);
+}
+
+.line {
+    border-top: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    padding: 0px;
 }
