@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SignUp from './SignUp';
 
 function Body() {
-  return (
+    
+    const [signUp , setSignUp] = useState(true);
+  
+    return (
     <>
-        <SignUp />
+        {signUp && <SignUp />}
     </>
   )
 }
