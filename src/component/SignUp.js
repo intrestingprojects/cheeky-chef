@@ -36,7 +36,7 @@ function SignUp(props) {
                         <input className='loginFormInputs' placeholder='Email'></input>
                         <input className='loginFormInputs' placeholder={signUp ? 'Password' : 'Create Password'}></input>
                         <button className='OtpButton'>
-                            {Constants.LOG_IN}
+                            {signUp ? Constants.LOG_IN : Constants.CREATE_NEW_ACCOUNT}
                         </button>
                         <div className='divider'>
                             <hr className='line'></hr>

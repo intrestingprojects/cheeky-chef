@@ -1,5 +1,6 @@
 {
     "LOG_IN" : "Log In",
+    "CREATE_NEW_ACCOUNT": "Create New Account",
     "CONTINIUE_WITH_GOOGLE" : "Continue with Google",
     "CONTINIUE_WITH_EMAIL" : "Continue with Email"
 }
