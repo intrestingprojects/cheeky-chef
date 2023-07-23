@@ -49,7 +49,7 @@ function SignUp(props) {
                         <hr className='line'></hr>
                         {
                             signUp &&
-                            <p className='createAccount'>New to Zomato? <span className='newAccountLink' onClick={createNewAccount}>Create account</span></p>
+                            <p className='createAccount'>New to Cheeky-Chef? <span className='newAccountLink' onClick={createNewAccount}>Create account</span></p>
                         }
                         {
                             newAccount &&
