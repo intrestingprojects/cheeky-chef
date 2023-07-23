@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 :root {
     --black: rgb(28, 28, 28);
     --white: rgb(255, 255, 255);
     --whiteBorder: rgb(207, 207, 207);
+    --whiteLine: rgb(232, 232, 232);
   }
 
 #signUpOuterContainer {
@@ -97,7 +98,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0 0 2.4rem;
+    margin: 0 0 1rem;
 }
 
 /* position relative means position wrt to its original position
@@ -112,6 +113,38 @@ position absolute means position wrt to nearest ancesstor */
 .line {
     border-top: none;
     width: 100%;
-    border-bottom: 1px solid rgb(232, 232, 232);
+    border-bottom: 1px solid var(--whiteLine);
     padding: 0px;
+}
+
+.loginOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 44px;
+    font-size: inherit;
+    cursor: pointer;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 0.6rem;
+    margin-bottom: 1.2rem;
+    color: rgb(105, 105, 105);
+    font-weight: 400;
+}
+
+.loginOptionsLogo {
+    display: flex;
+    align-items: center;
+    margin-right: 0.6rem;
+}
+
+.createAccount {
+    font-size: 1rem;
+    line-height: 3rem;
+}
+
+.newAccountLink {
+    color: rgb(239, 79, 95);
+    cursor: pointer;
+    font-size: inherit;
 }
