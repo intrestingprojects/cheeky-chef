@@ -4,13 +4,11 @@ import NewAccount from './NewAccount';
 
 function Body() {
 
-    const [signUp , setSignUp] = useState(true);
-    const [newAccount , setNewAccount] = useState(false);
+    
   
     return (
     <>
-        {signUp && <SignUp setSignUp = {setSignUp} setNewAccount = {setNewAccount}/>}
-        {newAccount && <NewAccount/>}
+        <SignUp />
     </>
   )
 }
