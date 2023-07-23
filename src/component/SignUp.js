@@ -48,7 +48,7 @@ function SignUp(props) {
                         <SocialLoginBtn svg={GoogleSvg} title={Constants.CONTINIUE_WITH_GOOGLE} />
 
                         <hr className='line'></hr>
-                        <p className='createAccount'>New to Zomato? <span className='newAccountLink' onClick={createNewAccount}>Create account</span></p>
+                        <p className='createAccount'>New to Cheeky-Chef? <span className='newAccountLink' onClick={createNewAccount}>Create account</span></p>
                     </section>
                 </div>
             </div>
