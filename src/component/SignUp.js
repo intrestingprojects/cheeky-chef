@@ -2,7 +2,7 @@ import React from 'react'
 import "../Css/Common.css"
 import Constants from "../Constant/Constants.json"
 
-function SignUp() {
+function SignUp(props) {
 
     const validateNumber = (e) => {
         let currElement = e.key;
@@ -13,6 +13,11 @@ function SignUp() {
         else if(num.length >= 10 || !(/[0-9]/.test(currElement))) {
             e.preventDefault();
         }
+    }
+
+    const createNewAccount = () => {
+        props.setSignUp(false);
+        props.setNewAccount(true);
     }
     
 
@@ -64,7 +69,7 @@ function SignUp() {
                         <span>Continue With Google</span>
                     </div>
                     <hr className='line'></hr>
-                    <p className='createAccount'>New to Zomato? <span className='newAccountLink'>Create account</span></p>
+                    <p className='createAccount'>New to Zomato? <span className='newAccountLink' onClick={createNewAccount}>Create account</span></p>
                 </section>
             </div>
         </div>
