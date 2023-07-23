@@ -34,7 +34,7 @@ function SignUp(props) {
                     <section style={{marginTop:"2rem"}}>
                         {newAccount && <input className='loginFormInputs' placeholder='Name'></input>}
                         <input className='loginFormInputs' placeholder='Email'></input>
-                        <input className='loginFormInputs' placeholder='Password'></input>
+                        <input className='loginFormInputs' placeholder={signUp ? 'Password' : 'Create Password'}></input>
                         <button className='OtpButton'>
                             {Constants.LOG_IN}
                         </button>
