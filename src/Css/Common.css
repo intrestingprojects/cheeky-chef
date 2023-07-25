@@ -10,7 +10,38 @@
     --white: rgb(255, 255, 255);
     --whiteBorder: rgb(207, 207, 207);
     --whiteLine: rgb(232, 232, 232);
+}
+ li a{
+    text-decoration: none;
+    color: var(--black);
+ }
+
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.image-container {
+    position: relative;
+    height: calc(100vh - 2rem); /* Set the height to 2rem less than viewport height */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Apply a 50% blur effect (you can adjust the value as needed) */
+    z-index: -100;
   }
+
+
 
 #signUpOuterContainer {
     background-color: var(--black);
