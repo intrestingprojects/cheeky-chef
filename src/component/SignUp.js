@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../Css/SignUp.css"
 import "../Css/Common.css"
 import Constants from "../Constant/Constants.json"
 
@@ -20,9 +21,10 @@ function SignUp(props) {
         setNewAccount(false);
     }
 
-    const closePop = () => {
-        props.setClosePop(false);
+    const closePopup = () => {
+        props.setShowPopup(false);  
     }
+
 
     return (
         <>
@@ -31,7 +33,7 @@ function SignUp(props) {
                     <div className='signUpHeader'>
                         {signUp && <h1>{Constants.LOG_IN}</h1>}
                         {newAccount && <h1>{Constants.SIGN_UP}</h1>}
-                        <i onClick={closePop} style={{cursor:"pointer"}}>
+                        <i onClick={closePopup} style={{cursor:"pointer"}}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="24" height="24" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cdktuZ"><title>cross</title><path d="M11.42 10.42l3.54-3.54c0.38-0.4 0.38-1.040 0-1.42s-1.020-0.4-1.42 0l-3.54 3.54-3.54-3.54c-0.4-0.4-1.020-0.4-1.42 0s-0.38 1.020 0 1.42l3.54 3.54-3.54 3.54c-0.38 0.38-0.38 1.020 0 1.42 0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28l3.54-3.56 3.54 3.56c0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28c0.38-0.4 0.38-1.040 0-1.42l-3.54-3.54z"></path></svg>
                         </i>
                     </div>

@@ -11,9 +11,10 @@
     --whiteBorder: rgb(207, 207, 207);
     --whiteLine: rgb(232, 232, 232);
 }
- li a{
+a{
     text-decoration: none;
     color: var(--black);
+    cursor: pointer;
  }
 
 
@@ -30,7 +31,7 @@
 }
 
 .background-image {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -40,119 +41,17 @@
     filter: blur(4px); /* Apply a 50% blur effect (you can adjust the value as needed) */
     z-index: -100;
   }
+.home__background-image {
+    background-image: url('https://images.unsplash.com/photo-1605522561233-768ad7a8fabf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');
+}
 
-
-
-#signUpOuterContainer {
+.Backdrop{
     background-color: var(--black);
-    opacity: 0.85;
+    opacity: 0.8; 
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.signUpContainer {
-    width: max-content;
-    min-height: 150px;
-    min-width: 24rem;
-    background-color: var(--white);
-    padding: 16px 24px;
-    border-radius: 0.6rem;
-}
-
-.signUpHeader{
-    display: flex;
-    justify-content: space-between;
-    color: black;
-}
-
-.loginFormInputs {
-    display: block;
-    width: 100%;
-    height: 44px;
-    margin-bottom: 1.2rem;
-    font-size: 1.2rem;
-    border-radius: 0.4rem;
-    outline: none;
-    border: 0.1rem solid rgb(207, 207, 207);
-    padding: 1.3rem 1.2rem;
-}
-
-.countryInputDivider {
-    width: 0px;
-    height: 2.4rem;
-    border-right: 1px solid rgb(207, 207, 207);
-    margin-left: 1rem;
-}
-
-.OtpButton {
-    width: 100%;
-    min-height: 44px;
-    border-radius: 0.6rem;
-    background-color: rgb(234, 57, 44);
-    border: none;
-    padding: none;
-    cursor: pointer;
-    color: var(--white);
-    font-weight: 600;
-    font-size: inherit;
-    margin-bottom: 1rem;
-}
-
-.divider {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 0 1rem;
-}
-
-/* position relative means position wrt to its original position
-position absolute means position wrt to nearest ancesstor */
-
-.horizontalDivider {
-    position: relative;
-    transform: translateY(-65%);
-    background: var(--white);
-}
-
-.line {
-    border-top: none;
-    width: 100%;
-    border-bottom: 1px solid var(--whiteLine);
-    padding: 0px;
-}
-
-.loginOptions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 44px;
-    font-size: inherit;
-    cursor: pointer;
-    border: 1px solid rgb(207, 207, 207);
-    border-radius: 0.6rem;
-    margin-bottom: 1.2rem;
-    color: rgb(105, 105, 105);
-    font-weight: 400;
-}
-
-.loginOptionsLogo {
-    display: flex;
-    align-items: center;
-    margin-right: 0.6rem;
-}
-
-.createAccount {
-    font-size: 1rem;
-    line-height: 3rem;
-}
-
-.newAccountLink {
-    color: rgb(239, 79, 95);
-    cursor: pointer;
-    font-size: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
 }

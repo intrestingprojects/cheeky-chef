@@ -1,10 +1,10 @@
 header{
     background-color: rgb(229, 229, 229);
     box-sizing: border-box;
+    width: 100vw;
 }
 
 .Navbar{
-    /* margin-top: 2rem; */
     padding: 1.2rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -13,12 +13,12 @@ header{
 
 .Navbar__links{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     list-style: none;
     gap: 2.5rem;
+    cursor: pointer;
 }
 .Navbar__link:hover{
     text-decoration: underline;
-    /* padding: 0.5rem 0.6rem; */
 }

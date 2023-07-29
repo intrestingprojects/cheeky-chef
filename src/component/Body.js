@@ -1,14 +1,27 @@
-import React, { useState } from "react";
-import SignUp from "./SignUp";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import "../Css/Common.css"
+import "../Css/Navbar.css"
+
 import HomePage from "./HomePage";
+import Navbar from "./Navbar";
+import BlogPage from './BlogPage/BlogPage';
+import NotFound from './NotFound';
+import SignUp from "./SignUp";
 
 function Body() {
-  const [closePop, setClosePop] = useState(true);
-
   return (
     <>
-      {closePop && <SignUp setClosePop={setClosePop} />}
-      <HomePage />
+      <Navbar />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
     </>
   );
 }
