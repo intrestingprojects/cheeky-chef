@@ -8,7 +8,6 @@ import HomePage from "./HomePage";
 import Navbar from "./Navbar";
 import BlogPage from './BlogPage/BlogPage';
 import NotFound from './NotFound';
-import SignUp from "./SignUp";
 
 function Body() {
   return (
