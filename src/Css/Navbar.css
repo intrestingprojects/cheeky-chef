@@ -2,7 +2,19 @@ header{
     background-color: rgb(229, 229, 229);
     box-sizing: border-box;
     width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* z-index: 1000; */
+    opacity: 0; /* Start with 0 opacity, will fade in */
+    animation: fadeIn 2s ease forwards; /* Apply the animation */
 }
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
 
 .Navbar{
     padding: 1.2rem 1rem;
@@ -21,4 +33,21 @@ header{
 }
 .Navbar__link:hover{
     text-decoration: underline;
-}
+} 
+
+.Navbar__link{
+    text-decoration: none;
+    color: #000000; /* Change this to your desired link color */
+    font-weight: bold;
+  } 
+  
+  .Navbar__link::after {
+    position: fixed;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #000000; /* Change this to your desired underline color */
+    transition: width 0.3s ease;
+  }
+  /* Have to change the colors to variables */

@@ -54,7 +54,7 @@ function SignUp(props) {
 
                         <hr className='line'></hr>
                         {
-                            signUp &&
+                            signUp && 
                             <p className='createAccount'>New to Cheeky-Chef? <span className='newAccountLink' onClick={createNewAccount}>Create account</span></p>
                         }
                         {

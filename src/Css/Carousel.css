@@ -1,0 +1,16 @@
+.carousel-slide {
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    height: 100%;
+    z-index: -100; /* Send the carousel to the background */
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Adjust image sizing to cover the entire slide */
+  }
+  

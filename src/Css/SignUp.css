@@ -1,7 +1,8 @@
 
 #signUpOuterContainer {
     background-color: var(--black);
-    opacity: 0.85; 
+    /* opacity: 0.85;    */
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -21,10 +22,6 @@
     background-color: var(--white);
     padding: 16px 24px;
     border-radius: 0.6rem;
-}
-
-.signup__background-image {
-    background-image: url('https://images.unsplash.com/photo-1605522561233-768ad7a8fabf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');
 }
 
 .signUpHeader{

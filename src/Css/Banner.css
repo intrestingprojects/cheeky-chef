@@ -1,0 +1,27 @@
+.Banner_Outer_container{
+    height: 80vh;
+}
+
+.carousel_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    z-index: -10;
+    background: none;
+}
+.bannerContainer{
+    height: 100%;
+}
+
+.tagLineContainer{
+    background-color: aliceblue;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+}
+.tagLine{
+    font-size: 1rem;
+}
+
+

@@ -5,13 +5,7 @@ function BlogPage() {
   return (
     <>
         <div>BlogPage</div>
-        <div>BlogPage</div>
-        <div>BlogPage</div>
-        <div>BlogPage</div>
-        <div>BlogPage</div>
-        <div>BlogPage</div>
-        <div>BlogPage</div>
-        <div>BlogPage</div>
+        
     </>
   )
 }
